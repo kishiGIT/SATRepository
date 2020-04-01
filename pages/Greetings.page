@@ -1,0 +1,7 @@
+<apex:page standardController="Account">
+
+  <h1>Hello people!!!</h1>
+  <h2>Demo on March 18th </h2>
+               
+
+</apex:page>

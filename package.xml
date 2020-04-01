@@ -1,10 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <version>46.0</version>
+    <version>47.0</version>
+    <types>
+        <members>BotController</members>
+        <members>BotField</members>
+        <members>BotHandler</members>
+        <members>BotItem</members>
+        <members>BotMessage</members>
+        <members>BotMessageButton</members>
+        <members>BotRecord</members>
+        <members>BotResponse</members>
+        <members>BotTest</members>
+        <members>DreamHouseSampleDataController</members>
+        <members>EinsteinVisionController</members>
+        <members>EinsteinVisionControllerTest</members>
+        <members>HandlerAddTwoNumbers</members>
+        <members>HandlerCostCenter</members>
+        <members>HandlerEmployeeId</members>
+        <members>HandlerFileUpload</members>
+        <members>HandlerFindAccount</members>
+        <members>HandlerFindContact</members>
+        <members>HandlerFindProperties</members>
+        <members>HandlerFindPropertiesByBedrooms</members>
+        <members>HandlerHello</members>
+        <members>HandlerHelp</members>
+        <members>HandlerHelpTopic</members>
+        <members>HandlerImageBasedSearch</members>
+        <members>HandlerMyOpenCases</members>
+        <members>HandlerNext</members>
+        <members>HandlerPipeline</members>
+        <members>HandlerQuarter</members>
+        <members>HandlerSOQL</members>
+        <members>HandlerTopOpportunities</members>
+        <members>HandlerTravelApproval</members>
+        <members>HelloWorldTestClass</members>
+        <members>HttpFormBuilder</members>
+        <members>JWT</members>
+        <members>JWTBearerFlow</members>
+        <members>LIFXController</members>
+        <members>LIFXControllerTest</members>
+        <members>MyHelloWorld</members>
+        <members>PostPriceChangeToSlack</members>
+        <members>PostPriceChangeToSlackTest</members>
+        <members>PropertyController</members>
+        <members>PropertyControllerTest</members>
+        <members>PropertyPagedResult</members>
+        <members>PushPriceChangeNotification</members>
+        <members>PushPriceChangeNotificationTest</members>
+        <members>RejectDuplicateFavoriteTest</members>
+        <members>SlackOpportunityPublisher</members>
+        <members>SlackOpportunityPublisherTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>DreamHouseSampleData</members>
+        <members>Greetings</members>
+        <members>HeatMap</members>
+        <members>HeatMapMock</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>HelloWorldTrigger</members>
+        <members>PushNotificationTrigger</members>
+        <members>RejectDuplicateFavorite</members>
+        <name>ApexTrigger</name>
+    </types>
     <types>
         <members>AppSwitcher</members>
         <members>Salesforce1</members>
         <name>AppMenu</name>
+    </types>
+    <types>
+        <members>default_appointment_scheduling_policy</members>
+        <name>AppointmentSchedulingPolicy</name>
     </types>
     <types>
         <members>Case.Standard</members>
@@ -15,6 +83,42 @@
         <members>Case</members>
         <members>Lead</members>
         <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>Bot</members>
+        <members>DaysOnMarketEstimator</members>
+        <members>EinsteinVision</members>
+        <members>EinsteinVisionCard</members>
+        <members>EinsteinVisionDashboard</members>
+        <members>EinsteinVisionDataset</members>
+        <members>EinsteinVisionDatasetEvent</members>
+        <members>EinsteinVisionEvent</members>
+        <members>FormattedDate</members>
+        <members>Map</members>
+        <members>MapCard</members>
+        <members>MortgageAmortizationChart</members>
+        <members>MortgageCalculator</members>
+        <members>MortgageCalculatorCard</members>
+        <members>MortgageChange</members>
+        <members>PictureCarousel</members>
+        <members>PictureGalleryCard</members>
+        <members>PriceRange</members>
+        <members>PropertyDaysOnMarketChart</members>
+        <members>PropertyListDaysOnMarketChart</members>
+        <members>PropertyPageChange</members>
+        <members>PropertyPaginator</members>
+        <members>PropertySummary</members>
+        <members>PropertyTile</members>
+        <members>PropertyTileList</members>
+        <members>RangeChange</members>
+        <members>SimilarProperties</members>
+        <members>SmartHome</members>
+        <members>SmartHomeCard</members>
+        <members>SmartLights</members>
+        <members>SmartLocks</members>
+        <members>SmartPriceCalculator</members>
+        <members>SmartThermostat</members>
+        <name>AuraDefinitionBundle</name>
     </types>
     <types>
         <members>Case</members>
@@ -30,6 +134,16 @@
         <name>Community</name>
     </types>
     <types>
+        <members>Broker__c.Broker_Compact</members>
+        <members>Property__c.Property_Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>dreamhouselogosquare</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>DreamHouse</members>
         <members>standard__AppLauncher</members>
         <members>standard__Chatter</members>
         <members>standard__Community</members>
@@ -59,11 +173,14 @@
         <members>Account.CleanStatus</members>
         <members>Account.CustomerPriority__c</members>
         <members>Account.DandbCompanyId</members>
+        <members>Account.DateAcc__c</members>
         <members>Account.Description</members>
         <members>Account.DunsNumber</members>
         <members>Account.Fax</members>
         <members>Account.Industry</members>
         <members>Account.Jigsaw</members>
+        <members>Account.March18Demo__c</members>
+        <members>Account.March_24__c</members>
         <members>Account.NaicsCode</members>
         <members>Account.NaicsDesc</members>
         <members>Account.Name</members>
@@ -91,6 +208,21 @@
         <members>AccountCleanInfo.Industry</members>
         <members>AccountCleanInfo.Ownership</members>
         <members>AccountContactRole.Role</members>
+        <members>ActiveScratchOrg.Description</members>
+        <members>ActiveScratchOrg.Edition</members>
+        <members>ActiveScratchOrg.ExpirationDate</members>
+        <members>ActiveScratchOrg.Features</members>
+        <members>ActiveScratchOrg.Id</members>
+        <members>ActiveScratchOrg.LastLoginDate</members>
+        <members>ActiveScratchOrg.Name</members>
+        <members>ActiveScratchOrg.Namespace</members>
+        <members>ActiveScratchOrg.OrgName</members>
+        <members>ActiveScratchOrg.ScratchOrg</members>
+        <members>ActiveScratchOrg.ScratchOrgInfoId</members>
+        <members>ActiveScratchOrg.SignupEmail</members>
+        <members>ActiveScratchOrg.SignupInstance</members>
+        <members>ActiveScratchOrg.SignupTrialDays</members>
+        <members>ActiveScratchOrg.SignupUsername</members>
         <members>Asset.AccountId</members>
         <members>Asset.AssetLevel</members>
         <members>Asset.AssetProvidedById</members>
@@ -149,6 +281,16 @@
         <members>AuthorizationFormText.Locale</members>
         <members>AuthorizationFormText.Name</members>
         <members>AuthorizationFormText.SummaryAuthFormText</members>
+        <members>Bot_Command__c.Active__c</members>
+        <members>Bot_Command__c.Apex_Class__c</members>
+        <members>Bot_Command__c.Pattern__c</members>
+        <members>Bot_Command__c.Sample_Utterance__c</members>
+        <members>Broker__c.Email__c</members>
+        <members>Broker__c.Mobile_Phone__c</members>
+        <members>Broker__c.Phone__c</members>
+        <members>Broker__c.Picture_IMG__c</members>
+        <members>Broker__c.Picture__c</members>
+        <members>Broker__c.Title__c</members>
         <members>Campaign.ActualCost</members>
         <members>Campaign.AmountAllOpportunities</members>
         <members>Campaign.AmountWonOpportunities</members>
@@ -323,6 +465,7 @@
         <members>Contact.LastCUUpdateDate</members>
         <members>Contact.LeadSource</members>
         <members>Contact.Level__c</members>
+        <members>Contact.Location__c</members>
         <members>Contact.MailingAddress</members>
         <members>Contact.MobilePhone</members>
         <members>Contact.Name</members>
@@ -563,6 +706,13 @@
         <members>DigitalWallet.NickName</members>
         <members>DigitalWallet.PaymentGatewayId</members>
         <members>DigitalWallet.Status</members>
+        <members>Dreamhouse_Settings__c.Einstein_Vision_Email__c</members>
+        <members>Dreamhouse_Settings__c.LIFX_Token__c</members>
+        <members>Dreamhouse_Settings__c.LIFX_URL__c</members>
+        <members>Dreamhouse_Settings__c.Light_Service_URL__c</members>
+        <members>Dreamhouse_Settings__c.Push_Server_URL__c</members>
+        <members>Dreamhouse_Settings__c.Slack_Opportunity_Webhook_URL__c</members>
+        <members>Dreamhouse_Settings__c.Slack_Property_Webhook_URL__c</members>
         <members>DuplicateRecordItem.DuplicateRecordSetId</members>
         <members>DuplicateRecordItem.RecordId</members>
         <members>DuplicateRecordSet.DuplicateRuleId</members>
@@ -613,6 +763,8 @@
         <members>Event.Type</members>
         <members>Event.WhatId</members>
         <members>Event.WhoId</members>
+        <members>Favorite__c.Property__c</members>
+        <members>Favorite__c.User__c</members>
         <members>Idea.Categories</members>
         <members>Idea.Status</members>
         <members>Image.AlternateText</members>
@@ -720,6 +872,8 @@
         <members>Macro.Name</members>
         <members>Macro.OwnerId</members>
         <members>Macro.StartingContext</members>
+        <members>Mar27__c.MarD__c</members>
+        <members>Mar30th__c.MarDesc__c</members>
         <members>MessagingEndUser.AccountId</members>
         <members>MessagingEndUser.ContactId</members>
         <members>MessagingEndUser.HasInitialResponseSent</members>
@@ -752,6 +906,7 @@
         <members>MessagingSession.PreviewDetails</members>
         <members>MessagingSession.StartTime</members>
         <members>MessagingSession.Status</members>
+        <members>NamespaceRegistry.NamespacePrefix</members>
         <members>OperatingHours.Description</members>
         <members>OperatingHours.Name</members>
         <members>OperatingHours.TimeZone</members>
@@ -960,6 +1115,31 @@
         <members>Product2.StockKeepingUnit</members>
         <members>ProductConsumptionSchedule.ConsumptionScheduleId</members>
         <members>ProductConsumptionSchedule.ProductId</members>
+        <members>Property__c.Address__c</members>
+        <members>Property__c.Assessed_Value__c</members>
+        <members>Property__c.Baths__c</members>
+        <members>Property__c.Beds__c</members>
+        <members>Property__c.Broker__c</members>
+        <members>Property__c.City__c</members>
+        <members>Property__c.Date_Agreement__c</members>
+        <members>Property__c.Date_Closed__c</members>
+        <members>Property__c.Date_Contracted__c</members>
+        <members>Property__c.Date_Listed__c</members>
+        <members>Property__c.Date_Pre_Market__c</members>
+        <members>Property__c.Days_On_Market__c</members>
+        <members>Property__c.Description__c</members>
+        <members>Property__c.Location__c</members>
+        <members>Property__c.Picture_IMG__c</members>
+        <members>Property__c.Picture__c</members>
+        <members>Property__c.Price__c</members>
+        <members>Property__c.Record_Link__c</members>
+        <members>Property__c.State__c</members>
+        <members>Property__c.Status__c</members>
+        <members>Property__c.Tags__c</members>
+        <members>Property__c.Thumbnail_IMG__c</members>
+        <members>Property__c.Thumbnail__c</members>
+        <members>Property__c.Title__c</members>
+        <members>Property__c.Zip__c</members>
         <members>QuickText.Category</members>
         <members>QuickText.Channel</members>
         <members>QuickText.Message</members>
@@ -1043,6 +1223,7 @@
         <members>RevenueElement.RevenueEndDate</members>
         <members>RevenueElement.RevenueSourceId</members>
         <members>RevenueElement.RevenueStartDate</members>
+        <members>SF1__c.TestSF1__c</members>
         <members>Scorecard.Description</members>
         <members>Scorecard.Name</members>
         <members>Scorecard.OwnerId</members>
@@ -1053,6 +1234,35 @@
         <members>ScorecardMetric.Name</members>
         <members>ScorecardMetric.ReportId</members>
         <members>ScorecardMetric.ScorecardId</members>
+        <members>ScratchOrgInfo.AdminEmail</members>
+        <members>ScratchOrgInfo.AuthCode</members>
+        <members>ScratchOrgInfo.ConnectedAppCallbackUrl</members>
+        <members>ScratchOrgInfo.ConnectedAppConsumerKey</members>
+        <members>ScratchOrgInfo.Country</members>
+        <members>ScratchOrgInfo.DeletedBy</members>
+        <members>ScratchOrgInfo.DeletedDate</members>
+        <members>ScratchOrgInfo.Description</members>
+        <members>ScratchOrgInfo.Edition</members>
+        <members>ScratchOrgInfo.ErrorCode</members>
+        <members>ScratchOrgInfo.ExpirationDate</members>
+        <members>ScratchOrgInfo.Features</members>
+        <members>ScratchOrgInfo.Instance</members>
+        <members>ScratchOrgInfo.Language</members>
+        <members>ScratchOrgInfo.LastLoginDate</members>
+        <members>ScratchOrgInfo.Name</members>
+        <members>ScratchOrgInfo.Namespace</members>
+        <members>ScratchOrgInfo.OrgName</members>
+        <members>ScratchOrgInfo.Package2AncestorIds</members>
+        <members>ScratchOrgInfo.Release</members>
+        <members>ScratchOrgInfo.ScratchOrg</members>
+        <members>ScratchOrgInfo.SignupCountry</members>
+        <members>ScratchOrgInfo.SignupEmail</members>
+        <members>ScratchOrgInfo.SignupInstance</members>
+        <members>ScratchOrgInfo.SignupLanguage</members>
+        <members>ScratchOrgInfo.SignupTrialDays</members>
+        <members>ScratchOrgInfo.SignupUsername</members>
+        <members>ScratchOrgInfo.Status</members>
+        <members>ScratchOrgInfo.Username</members>
         <members>ServiceAppointment.AccountId</members>
         <members>ServiceAppointment.ActualDuration</members>
         <members>ServiceAppointment.ActualEndTime</members>
@@ -1197,12 +1407,14 @@
         <members>WorkTypeGroup.OwnerId</members>
         <members>WorkTypeGroupMember.WorkTypeGroupId</members>
         <members>WorkTypeGroupMember.WorkTypeId</members>
+        <members>book__c.price__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Account</members>
         <members>AccountCleanInfo</members>
         <members>AccountContactRole</members>
+        <members>ActiveScratchOrg</members>
         <members>Activity</members>
         <members>Asset</members>
         <members>AssetRelationship</members>
@@ -1212,6 +1424,9 @@
         <members>AuthorizationFormConsent</members>
         <members>AuthorizationFormDataUse</members>
         <members>AuthorizationFormText</members>
+        <members>AutoTest__c</members>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
         <members>Campaign</members>
         <members>CampaignMember</members>
         <members>CardPaymentMethod</members>
@@ -1242,6 +1457,7 @@
         <members>DataUseLegalBasis</members>
         <members>DataUsePurpose</members>
         <members>DigitalWallet</members>
+        <members>Dreamhouse_Settings__c</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
         <members>EmailMessage</members>
@@ -1251,6 +1467,7 @@
         <members>ExpressionFilter</members>
         <members>ExpressionFilterCriteria</members>
         <members>ExternalEventMapping</members>
+        <members>Favorite__c</members>
         <members>FeedItem</members>
         <members>Idea</members>
         <members>Image</members>
@@ -1263,8 +1480,11 @@
         <members>MacroAction</members>
         <members>MacroInstruction</members>
         <members>MacroUsage</members>
+        <members>Mar27__c</members>
+        <members>Mar30th__c</members>
         <members>MessagingEndUser</members>
         <members>MessagingSession</members>
+        <members>NamespaceRegistry</members>
         <members>OperatingHours</members>
         <members>Opportunity</members>
         <members>OpportunityCompetitor</members>
@@ -1288,6 +1508,7 @@
         <members>Product2</members>
         <members>ProductConsumptionSchedule</members>
         <members>PromptAction</members>
+        <members>Property__c</members>
         <members>QuickText</members>
         <members>QuickTextUsage</members>
         <members>Recommendation</members>
@@ -1298,9 +1519,11 @@
         <members>ResourceAbsence</members>
         <members>ResourcePreference</members>
         <members>RevenueElement</members>
+        <members>SF1__c</members>
         <members>Scorecard</members>
         <members>ScorecardAssociation</members>
         <members>ScorecardMetric</members>
+        <members>ScratchOrgInfo</members>
         <members>ServiceAppointment</members>
         <members>ServiceResource</members>
         <members>ServiceResourceSkill</members>
@@ -1322,7 +1545,39 @@
         <members>WorkType</members>
         <members>WorkTypeGroup</members>
         <members>WorkTypeGroupMember</members>
+        <members>book__c</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>AutoTest__c-en_US</members>
+        <members>Bot_Command__c-en_US</members>
+        <members>Broker__c-en_US</members>
+        <members>Dreamhouse_Settings__c-en_US</members>
+        <members>Favorite__c-en_US</members>
+        <members>Mar27__c-en_US</members>
+        <members>Mar30th__c-en_US</members>
+        <members>Property__c-en_US</members>
+        <members>SF1__c-en_US</members>
+        <members>book__c-en_US</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
+        <members>Command_Center</members>
+        <members>Einstein_Vision</members>
+        <members>Heat_Map</members>
+        <members>Heat_Map_Mock</members>
+        <members>House_Explorer</members>
+        <members>Property_Explorer1</members>
+        <members>Property__c</members>
+        <members>Sample_Data_Import</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>DreamHouse_Dashboards</members>
+        <members>DreamHouse_Dashboards/PwhxKrnFNjvWCIHRklHhRcEIEyIIBm</members>
+        <name>Dashboard</name>
     </types>
     <types>
         <members>Account.Standard_Account_Duplicate_Rule</members>
@@ -1351,13 +1606,37 @@
         <name>EscalationRule</name>
     </types>
     <types>
+        <members>Command_Center</members>
+        <members>Einstein_Vision</members>
+        <members>House_Explorer1</members>
         <members>LightningSalesConsole_UtilityBar</members>
         <members>LightningService_UtilityBar</members>
+        <members>Property_Explorer</members>
+        <members>Property_Record_Page</members>
+        <members>dreamhouseApplicationUtilityBar</members>
         <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Advertise_New_Property</members>
+        <members>Opportunity_Status_Change</members>
+        <members>Post_Price_Changes_to_Slack</members>
+        <members>Price_Change_Push_Notification</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Advertise_New_Property</members>
+        <members>Opportunity_Status_Change</members>
+        <members>Post_Price_Changes_to_Slack</members>
+        <members>Price_Change_Push_Notification</members>
+        <name>FlowDefinition</name>
     </types>
     <types>
         <members>DE Default</members>
         <name>HomePageLayout</name>
+    </types>
+    <types>
+        <members>sf_com_apps</members>
+        <name>InstalledPackage</name>
     </types>
     <types>
         <members>Account-Account %28Marketing%29 Layout</members>
@@ -1371,6 +1650,9 @@
         <members>AuthorizationFormConsent-Authorization Form Consent Layout</members>
         <members>AuthorizationFormDataUse-Authorization Form Data Use Layout</members>
         <members>AuthorizationFormText-Authorization Form Text Layout</members>
+        <members>AutoTest__c-AutoTest Layout</members>
+        <members>Bot_Command__c-Bot Action Layout</members>
+        <members>Broker__c-Broker Layout</members>
         <members>Campaign-Campaign Layout</members>
         <members>CampaignMember-Campaign Member Page Layout</members>
         <members>CardPaymentMethod-Card Payment Method Layout</members>
@@ -1400,6 +1682,8 @@
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EmailMessage-Email Message Layout</members>
         <members>Event-Event Layout</members>
+        <members>Favorite__c-Favorite Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
         <members>Global-Global Layout</members>
         <members>Idea-Idea Layout</members>
         <members>Individual-Individual Layout</members>
@@ -1410,6 +1694,8 @@
         <members>Lead-Lead %28Support%29 Layout</members>
         <members>Lead-Lead Layout</members>
         <members>Macro-Macro Layout</members>
+        <members>Mar27__c-Mar27 Layout</members>
+        <members>Mar30th__c-Mar30th Layout</members>
         <members>OperatingHours-Operating Hours Layout</members>
         <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
         <members>Opportunity-Opportunity %28Sales%29 Layout</members>
@@ -1428,11 +1714,13 @@
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product Layout</members>
         <members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
+        <members>Property__c-Property Layout</members>
         <members>QuickText-Quick Text Layout</members>
         <members>Refund-Refund Layout</members>
         <members>RefundLinePayment-Refund Line Payment Layout</members>
         <members>ResourceAbsence-Resource Absence Layout</members>
         <members>ResourcePreference-Resource Preference Layout</members>
+        <members>SF1__c-SF1 Layout</members>
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardAssociation-Scorecard Association Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
@@ -1452,6 +1740,7 @@
         <members>WorkType-Work Type Layout</members>
         <members>WorkTypeGroup-Work Type Group Layout</members>
         <members>WorkTypeGroupMember-Work Type Group Member Layout</members>
+        <members>book__c-book Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -1460,6 +1749,8 @@
         <members>Account.NewLastWeek</members>
         <members>Account.NewThisWeek</members>
         <members>Account.PlatinumandGoldSLACustomers</members>
+        <members>ActiveScratchOrg.All_Active_Scratch_Orgs</members>
+        <members>ActiveScratchOrg.My_Active_Scratch_Orgs</members>
         <members>Activity.AllActivities</members>
         <members>Activity.MyActivities</members>
         <members>Activity.TodaysTasks</members>
@@ -1469,6 +1760,8 @@
         <members>AuthorizationFormConsent.All_AuthorizationFormConsents</members>
         <members>AuthorizationFormDataUse.All_AuthorizationFormDataUses</members>
         <members>AuthorizationFormText.All_AuthorizationFormText</members>
+        <members>Bot_Command__c.All</members>
+        <members>Broker__c.All</members>
         <members>Campaign.AllActiveCampaigns</members>
         <members>Campaign.MyActiveCampaigns</members>
         <members>CardPaymentMethod.CardPaymentMethod</members>
@@ -1503,6 +1796,7 @@
         <members>DataUsePurpose.All_DataUsePurposes</members>
         <members>DigitalWallet.DigitalWallet</members>
         <members>EngagementChannelType.All_EngagementChannelTypes</members>
+        <members>Favorite__c.All</members>
         <members>Idea.Ideas_Last_7_Days</members>
         <members>Invoice.mine</members>
         <members>Lead.AllOpenLeads</members>
@@ -1510,6 +1804,7 @@
         <members>Lead.TodaysLeads</members>
         <members>Lead.ViewCustom1</members>
         <members>Lead.ViewCustom2</members>
+        <members>NamespaceRegistry.All_Namespace_Registries</members>
         <members>OperatingHours.All_OperatingHours</members>
         <members>Opportunity.AllOpportunities</members>
         <members>Opportunity.ClosingNextMonth</members>
@@ -1530,11 +1825,14 @@
         <members>PaymentGroup.PaymentGroup</members>
         <members>PaymentLineInvoice.PaymentLineInvoice</members>
         <members>Product2.AllProducts</members>
+        <members>Property__c.All</members>
         <members>Recommendation.All_Recommendations</members>
         <members>Refund.Refund</members>
         <members>RefundLinePayment.RefundLinePayment</members>
         <members>Scorecard.AllScorecards</members>
         <members>Scorecard.MyScorecards</members>
+        <members>ScratchOrgInfo.All_Scratch_Org_Infos</members>
+        <members>ScratchOrgInfo.My_Scratch_Org_Infos</members>
         <members>ServiceAppointment.All_ServiceAppointments</members>
         <members>ServiceAppointment.MyPendingAppointments</members>
         <members>ServiceAppointment.MyScheduledAppointments</members>
@@ -1560,6 +1858,14 @@
         <members>WorkTypeGroup.All_WorkTypeGroups</members>
         <members>WorkTypeGroup.My_WorkTypeGroups</members>
         <name>ListView</name>
+    </types>
+    <types>
+        <members>news</members>
+        <name>ManagedContentType</name>
+    </types>
+    <types>
+        <members>Permission_set_Test</members>
+        <name>PermissionSet</name>
     </types>
     <types>
         <members>Admin</members>
@@ -1616,6 +1922,7 @@
         <members>NewNote</members>
         <members>NewOpportunity</members>
         <members>NewTask</members>
+        <members>Property__c.Smart_Home</members>
         <members>SendEmail</members>
         <members>Task.Defer</members>
         <members>Task.Defer_0</members>
@@ -1628,12 +1935,25 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>Account.Account_for_Sales_business</members>
+        <members>Account.Account_for_Support_business</members>
         <members>Idea.InternalIdeasIdeaRecordType</members>
         <name>RecordType</name>
     </types>
     <types>
         <members>ApexDevNet</members>
+        <members>Einstein_Vision</members>
+        <members>LIFX</members>
+        <members>PushServer</members>
+        <members>Slack</members>
         <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>DreamHouse_Reports</members>
+        <members>DreamHouse_Reports/Days_on_Market</members>
+        <members>DreamHouse_Reports/Portfolio_Health</members>
+        <members>DreamHouse_Reports/Properties_by_Broker</members>
+        <name>Report</name>
     </types>
     <types>
         <members>CEO</members>
@@ -1658,45 +1978,102 @@
     </types>
     <types>
         <members>Account</members>
+        <members>Actions</members>
         <members>Activities</members>
         <members>Address</members>
         <members>Analytics</members>
+        <members>Apex</members>
+        <members>AppExperience</members>
+        <members>Archive</members>
+        <members>Blockchain</members>
         <members>Bot</members>
         <members>BusinessHours</members>
+        <members>Campaign</members>
         <members>Case</members>
+        <members>Chatter</members>
+        <members>ChatterEmailsMD</members>
+        <members>Communities</members>
         <members>Company</members>
+        <members>ConnectedApp</members>
+        <members>Content</members>
         <members>Contract</members>
+        <members>Currency</members>
+        <members>DataDotCom</members>
+        <members>Deployment</members>
+        <members>DevHub</members>
+        <members>Discovery</members>
+        <members>EAC</members>
+        <members>EmailAdministration</members>
+        <members>EmailIntegration</members>
+        <members>EmailTemplate</members>
+        <members>EncryptionKey</members>
+        <members>EnhancedNotes</members>
         <members>Entitlement</members>
+        <members>Essentials</members>
+        <members>Event</members>
         <members>ExperienceBundle</members>
+        <members>ExternalServices</members>
         <members>FieldService</members>
         <members>FileUploadAndDownloadSecurity</members>
+        <members>FilesConnect</members>
+        <members>Flow</members>
         <members>Forecasting</members>
+        <members>Formula</members>
         <members>GoogleApps</members>
         <members>Ideas</members>
+        <members>Industries</members>
+        <members>InvocableAction</members>
+        <members>IsvHammer</members>
         <members>Knowledge</members>
+        <members>Language</members>
+        <members>LeadConfig</members>
+        <members>LightningExperience</members>
         <members>LiveAgent</members>
         <members>LiveMessage</members>
         <members>Macro</members>
         <members>Mobile</members>
+        <members>MyDomain</members>
         <members>Name</members>
         <members>Notifications</members>
+        <members>ObjectLinking</members>
         <members>OmniChannel</members>
         <members>Opportunity</members>
         <members>Order</members>
+        <members>OrderManagement</members>
         <members>Org</members>
         <members>OrgPreference</members>
+        <members>Pardot</members>
+        <members>PardotEinstein</members>
+        <members>PartyDataModel</members>
         <members>PathAssistant</members>
+        <members>Picklist</members>
+        <members>PlatformEncryption</members>
+        <members>Privacy</members>
         <members>Product</members>
         <members>Quote</members>
+        <members>RecordPage</members>
+        <members>RetailExecution</members>
+        <members>Schema</members>
         <members>Search</members>
         <members>Security</members>
+        <members>Sharing</members>
+        <members>Site</members>
+        <members>SocialProfile</members>
+        <members>Survey</members>
+        <members>SystemNotification</members>
         <members>Territory2</members>
+        <members>Trailhead</members>
+        <members>TrialOrg</members>
+        <members>UserEngagement</members>
         <members>UserInterface</members>
         <members>UserManagement</members>
+        <members>Voice</members>
+        <members>WorkDotCom</members>
         <name>Settings</name>
     </types>
     <types>
         <members>Account</members>
+        <members>ActiveScratchOrg</members>
         <members>ActivityRecurrence2</members>
         <members>Asset</members>
         <members>AssistantInteraction</members>
@@ -1705,6 +2082,9 @@
         <members>AuthorizationForm</members>
         <members>AuthorizationFormConsent</members>
         <members>AuthorizationFormDataUse</members>
+        <members>AutoTest__c</members>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
         <members>CalendarModel</members>
         <members>CalendarView</members>
         <members>Campaign</members>
@@ -1725,6 +2105,7 @@
         <members>EngagementChannelType</members>
         <members>ExchangeUserMapping</members>
         <members>ExternalEventMapping</members>
+        <members>Favorite__c</members>
         <members>FlowInterview</members>
         <members>Image</members>
         <members>Individual</members>
@@ -1733,6 +2114,8 @@
         <members>ListEmail</members>
         <members>Macro</members>
         <members>MacroUsage</members>
+        <members>Mar27__c</members>
+        <members>Mar30th__c</members>
         <members>MessagingEndUser</members>
         <members>MessagingSession</members>
         <members>NotifDeliveryUserPref</members>
@@ -1741,11 +2124,14 @@
         <members>OrgDeleteRequest</members>
         <members>PartyConsent</members>
         <members>PromptAction</members>
+        <members>Property__c</members>
         <members>QuickText</members>
         <members>QuickTextUsage</members>
         <members>RecordMergeHistory</members>
         <members>ReportResultBlob</members>
+        <members>SF1__c</members>
         <members>Scorecard</members>
+        <members>ScratchOrgInfo</members>
         <members>ServiceAppointment</members>
         <members>ServiceResource</members>
         <members>ServiceTerritory</members>
@@ -1759,6 +2145,7 @@
         <members>UserProvisioningRequest</members>
         <members>WorkType</members>
         <members>WorkTypeGroup</members>
+        <members>book__c</members>
         <name>SharingRules</name>
     </types>
     <types>
@@ -1808,19 +2195,36 @@
         <name>StandardValueSet</name>
     </types>
     <types>
+        <members>countup7</members>
+        <members>heatmap</members>
+        <members>heatmapmock</members>
+        <members>leaflet</members>
+        <members>leaflet1</members>
+        <members>nouislider</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
         <members>Account</members>
         <members>Asset</members>
+        <members>AutoTest__c</members>
+        <members>Bot_Command__c</members>
+        <members>Broker__c</members>
         <members>Campaign</members>
         <members>Case</members>
         <members>Contact</members>
         <members>ContentDocument</members>
         <members>Contract</members>
         <members>Event</members>
+        <members>Favorite__c</members>
         <members>Lead</members>
+        <members>Mar27__c</members>
+        <members>Mar30th__c</members>
         <members>Opportunity</members>
         <members>Order</members>
+        <members>Property__c</members>
         <members>ResourceAbsence</members>
         <members>ResourcePreference</members>
+        <members>SF1__c</members>
         <members>ServiceAppointment</members>
         <members>ServiceResource</members>
         <members>ServiceResourceSkill</members>
@@ -1828,7 +2232,13 @@
         <members>ServiceTerritoryMember</members>
         <members>Solution</members>
         <members>Task</members>
+        <members>book__c</members>
         <name>TopicsForObjects</name>
+    </types>
+    <types>
+        <members>en_US</members>
+        <members>it</members>
+        <name>Translations</name>
     </types>
     <types>
         <members>Account.Billing</members>

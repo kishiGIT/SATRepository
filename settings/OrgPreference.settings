@@ -77,6 +77,10 @@
         <settingValue>false</settingValue>
     </preferences>
     <preferences>
+        <settingName>Packaging2</settingName>
+        <settingValue>true</settingValue>
+    </preferences>
+    <preferences>
         <settingName>PardotAppV1Enabled</settingName>
         <settingValue>false</settingValue>
     </preferences>
@@ -118,7 +122,7 @@
     </preferences>
     <preferences>
         <settingName>ScratchOrgManagementPref</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>SelfSetPasswordInApi</settingName>
@@ -134,7 +138,7 @@
     </preferences>
     <preferences>
         <settingName>Translation</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>UpgradeInsecureRequestsPref</settingName>
