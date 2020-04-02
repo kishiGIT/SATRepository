@@ -140,10 +140,44 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>Lightning_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Lightning_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>CloseDate</fields>
+        <fields>Amount</fields>
+        <fields>Project_Code__c</fields>
+        <label>Lightning Compact Layout</label>
+    </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
-    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>LeftPanel</fullName>
+        <description>In LeftPanel on cmp</description>
+        <label>LeftPanel</label>
+    </fieldSets>
+    <fields>
+        <fullName>ABC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(StageName, &apos;Prospecting&apos;) , Amount * Probability,
+IF(ISPICKVAL(StageName, &apos;Qualification&apos;) , Amount * Probability,
+IF(ISPICKVAL(StageName, &apos;Proposal Preparation&apos;) , Amount * Probability,
+IF(ISPICKVAL(StageName, &apos;Proposal on Desk&apos;) , Amount * Probability,
+IF(ISPICKVAL(StageName, &apos;Negotation / Shortlist&apos;) , Amount * Probability,
+IF(ISPICKVAL(StageName, &apos;Verbal&apos;) , Amount * Probability,
+IF(ISPICKVAL(StageName, &apos;Signed&apos;) , Amount * 1,
+0
+)))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ABC</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>AccountId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -173,12 +207,668 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Algeria</fullName>
+                    <default>false</default>
+                    <label>Algeria</label>
+                </value>
+                <value>
+                    <fullName>American Samoa</fullName>
+                    <default>false</default>
+                    <label>American Samoa</label>
+                </value>
+                <value>
+                    <fullName>Anguilla</fullName>
+                    <default>false</default>
+                    <label>Anguilla</label>
+                </value>
+                <value>
+                    <fullName>Antigua and Barbuda</fullName>
+                    <default>false</default>
+                    <label>Antigua and Barbuda</label>
+                </value>
+                <value>
+                    <fullName>Argentina</fullName>
+                    <default>false</default>
+                    <label>Argentina</label>
+                </value>
+                <value>
+                    <fullName>Aruba</fullName>
+                    <default>false</default>
+                    <label>Aruba</label>
+                </value>
+                <value>
+                    <fullName>Australia</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>Austria</fullName>
+                    <default>false</default>
+                    <label>Austria</label>
+                </value>
+                <value>
+                    <fullName>Bahamas</fullName>
+                    <default>false</default>
+                    <label>Bahamas</label>
+                </value>
+                <value>
+                    <fullName>Bangladesh</fullName>
+                    <default>false</default>
+                    <label>Bangladesh</label>
+                </value>
+                <value>
+                    <fullName>Barbados</fullName>
+                    <default>false</default>
+                    <label>Barbados</label>
+                </value>
+                <value>
+                    <fullName>Belgium</fullName>
+                    <default>false</default>
+                    <label>Belgium</label>
+                </value>
+                <value>
+                    <fullName>Belize</fullName>
+                    <default>false</default>
+                    <label>Belize</label>
+                </value>
+                <value>
+                    <fullName>Bermuda</fullName>
+                    <default>false</default>
+                    <label>Bermuda</label>
+                </value>
+                <value>
+                    <fullName>Bolivia</fullName>
+                    <default>false</default>
+                    <label>Bolivia</label>
+                </value>
+                <value>
+                    <fullName>Bonaire, Sint Eustatius and Saba</fullName>
+                    <default>false</default>
+                    <label>Bonaire, Sint Eustatius and Saba</label>
+                </value>
+                <value>
+                    <fullName>Brazil</fullName>
+                    <default>false</default>
+                    <label>Brazil</label>
+                </value>
+                <value>
+                    <fullName>Brunei Darussalam</fullName>
+                    <default>false</default>
+                    <label>Brunei Darussalam</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Cayman Islands</fullName>
+                    <default>false</default>
+                    <label>Cayman Islands</label>
+                </value>
+                <value>
+                    <fullName>Chile</fullName>
+                    <default>false</default>
+                    <label>Chile</label>
+                </value>
+                <value>
+                    <fullName>China</fullName>
+                    <default>false</default>
+                    <label>China</label>
+                </value>
+                <value>
+                    <fullName>Christmas Island</fullName>
+                    <default>false</default>
+                    <label>Christmas Island</label>
+                </value>
+                <value>
+                    <fullName>Colombia</fullName>
+                    <default>false</default>
+                    <label>Colombia</label>
+                </value>
+                <value>
+                    <fullName>Cook Islands</fullName>
+                    <default>false</default>
+                    <label>Cook Islands</label>
+                </value>
+                <value>
+                    <fullName>Costa Rica</fullName>
+                    <default>false</default>
+                    <label>Costa Rica</label>
+                </value>
+                <value>
+                    <fullName>CuraÃƒÂ§ao</fullName>
+                    <default>false</default>
+                    <label>CuraÃƒÂ§ao</label>
+                </value>
+                <value>
+                    <fullName>Czech Republic</fullName>
+                    <default>false</default>
+                    <label>Czech Republic</label>
+                </value>
+                <value>
+                    <fullName>Denmark</fullName>
+                    <default>false</default>
+                    <label>Denmark</label>
+                </value>
+                <value>
+                    <fullName>Dominica</fullName>
+                    <default>false</default>
+                    <label>Dominica</label>
+                </value>
+                <value>
+                    <fullName>Dominican Republic</fullName>
+                    <default>false</default>
+                    <label>Dominican Republic</label>
+                </value>
+                <value>
+                    <fullName>Ecuador</fullName>
+                    <default>false</default>
+                    <label>Ecuador</label>
+                </value>
+                <value>
+                    <fullName>El Salvador</fullName>
+                    <default>false</default>
+                    <label>El Salvador</label>
+                </value>
+                <value>
+                    <fullName>Faroe Islands</fullName>
+                    <default>false</default>
+                    <label>Faroe Islands</label>
+                </value>
+                <value>
+                    <fullName>Fiji</fullName>
+                    <default>false</default>
+                    <label>Fiji</label>
+                </value>
+                <value>
+                    <fullName>Finland</fullName>
+                    <default>false</default>
+                    <label>Finland</label>
+                </value>
+                <value>
+                    <fullName>France</fullName>
+                    <default>false</default>
+                    <label>France</label>
+                </value>
+                <value>
+                    <fullName>French Guiana</fullName>
+                    <default>false</default>
+                    <label>French Guiana</label>
+                </value>
+                <value>
+                    <fullName>French Polynesia</fullName>
+                    <default>false</default>
+                    <label>French Polynesia</label>
+                </value>
+                <value>
+                    <fullName>Germany</fullName>
+                    <default>false</default>
+                    <label>Germany</label>
+                </value>
+                <value>
+                    <fullName>Ghana</fullName>
+                    <default>false</default>
+                    <label>Ghana</label>
+                </value>
+                <value>
+                    <fullName>Greenland</fullName>
+                    <default>false</default>
+                    <label>Greenland</label>
+                </value>
+                <value>
+                    <fullName>Grenada</fullName>
+                    <default>false</default>
+                    <label>Grenada</label>
+                </value>
+                <value>
+                    <fullName>Guadeloupe</fullName>
+                    <default>false</default>
+                    <label>Guadeloupe</label>
+                </value>
+                <value>
+                    <fullName>Guam</fullName>
+                    <default>false</default>
+                    <label>Guam</label>
+                </value>
+                <value>
+                    <fullName>Guatemala</fullName>
+                    <default>false</default>
+                    <label>Guatemala</label>
+                </value>
+                <value>
+                    <fullName>Guyana</fullName>
+                    <default>false</default>
+                    <label>Guyana</label>
+                </value>
+                <value>
+                    <fullName>Haiti</fullName>
+                    <default>false</default>
+                    <label>Haiti</label>
+                </value>
+                <value>
+                    <fullName>Honduras</fullName>
+                    <default>false</default>
+                    <label>Honduras</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong</fullName>
+                    <default>false</default>
+                    <label>Hong Kong</label>
+                </value>
+                <value>
+                    <fullName>Hungary</fullName>
+                    <default>false</default>
+                    <label>Hungary</label>
+                </value>
+                <value>
+                    <fullName>India</fullName>
+                    <default>false</default>
+                    <label>India</label>
+                </value>
+                <value>
+                    <fullName>Indonesia</fullName>
+                    <default>false</default>
+                    <label>Indonesia</label>
+                </value>
+                <value>
+                    <fullName>Iran (Islamic Republic Of)</fullName>
+                    <default>false</default>
+                    <label>Iran (Islamic Republic Of)</label>
+                </value>
+                <value>
+                    <fullName>Ireland</fullName>
+                    <default>false</default>
+                    <label>Ireland</label>
+                </value>
+                <value>
+                    <fullName>Italy</fullName>
+                    <default>false</default>
+                    <label>Italy</label>
+                </value>
+                <value>
+                    <fullName>Jamaica</fullName>
+                    <default>false</default>
+                    <label>Jamaica</label>
+                </value>
+                <value>
+                    <fullName>Japan</fullName>
+                    <default>false</default>
+                    <label>Japan</label>
+                </value>
+                <value>
+                    <fullName>Jordan</fullName>
+                    <default>false</default>
+                    <label>Jordan</label>
+                </value>
+                <value>
+                    <fullName>Kazakhstan</fullName>
+                    <default>false</default>
+                    <label>Kazakhstan</label>
+                </value>
+                <value>
+                    <fullName>Kiribati</fullName>
+                    <default>false</default>
+                    <label>Kiribati</label>
+                </value>
+                <value>
+                    <fullName>Kuwait</fullName>
+                    <default>false</default>
+                    <label>Kuwait</label>
+                </value>
+                <value>
+                    <fullName>Laos</fullName>
+                    <default>false</default>
+                    <label>Laos</label>
+                </value>
+                <value>
+                    <fullName>Liechtenstein</fullName>
+                    <default>false</default>
+                    <label>Liechtenstein</label>
+                </value>
+                <value>
+                    <fullName>Macao</fullName>
+                    <default>false</default>
+                    <label>Macao</label>
+                </value>
+                <value>
+                    <fullName>Malaysia</fullName>
+                    <default>false</default>
+                    <label>Malaysia</label>
+                </value>
+                <value>
+                    <fullName>Maldives</fullName>
+                    <default>false</default>
+                    <label>Maldives</label>
+                </value>
+                <value>
+                    <fullName>Marshall Islands</fullName>
+                    <default>false</default>
+                    <label>Marshall Islands</label>
+                </value>
+                <value>
+                    <fullName>Martinique</fullName>
+                    <default>false</default>
+                    <label>Martinique</label>
+                </value>
+                <value>
+                    <fullName>Mauritania</fullName>
+                    <default>false</default>
+                    <label>Mauritania</label>
+                </value>
+                <value>
+                    <fullName>Mexico</fullName>
+                    <default>false</default>
+                    <label>Mexico</label>
+                </value>
+                <value>
+                    <fullName>Micronesia, Federated States Of</fullName>
+                    <default>false</default>
+                    <label>Micronesia, Federated States Of</label>
+                </value>
+                <value>
+                    <fullName>Monaco</fullName>
+                    <default>false</default>
+                    <label>Monaco</label>
+                </value>
+                <value>
+                    <fullName>Montserrat</fullName>
+                    <default>false</default>
+                    <label>Montserrat</label>
+                </value>
+                <value>
+                    <fullName>Myanmar</fullName>
+                    <default>false</default>
+                    <label>Myanmar</label>
+                </value>
+                <value>
+                    <fullName>Nepal</fullName>
+                    <default>false</default>
+                    <label>Nepal</label>
+                </value>
+                <value>
+                    <fullName>Netherlands</fullName>
+                    <default>false</default>
+                    <label>Netherlands</label>
+                </value>
+                <value>
+                    <fullName>New Caledonia</fullName>
+                    <default>false</default>
+                    <label>New Caledonia</label>
+                </value>
+                <value>
+                    <fullName>New Zealand</fullName>
+                    <default>false</default>
+                    <label>New Zealand</label>
+                </value>
+                <value>
+                    <fullName>Nicaragua</fullName>
+                    <default>false</default>
+                    <label>Nicaragua</label>
+                </value>
+                <value>
+                    <fullName>Nigeria</fullName>
+                    <default>false</default>
+                    <label>Nigeria</label>
+                </value>
+                <value>
+                    <fullName>Norfolk Island</fullName>
+                    <default>false</default>
+                    <label>Norfolk Island</label>
+                </value>
+                <value>
+                    <fullName>Northern Mariana Islands</fullName>
+                    <default>false</default>
+                    <label>Northern Mariana Islands</label>
+                </value>
+                <value>
+                    <fullName>Norway</fullName>
+                    <default>false</default>
+                    <label>Norway</label>
+                </value>
+                <value>
+                    <fullName>Pakistan</fullName>
+                    <default>false</default>
+                    <label>Pakistan</label>
+                </value>
+                <value>
+                    <fullName>Panama</fullName>
+                    <default>false</default>
+                    <label>Panama</label>
+                </value>
+                <value>
+                    <fullName>Papua New Guinea</fullName>
+                    <default>false</default>
+                    <label>Papua New Guinea</label>
+                </value>
+                <value>
+                    <fullName>Paraguay</fullName>
+                    <default>false</default>
+                    <label>Paraguay</label>
+                </value>
+                <value>
+                    <fullName>Peru</fullName>
+                    <default>false</default>
+                    <label>Peru</label>
+                </value>
+                <value>
+                    <fullName>Philippines</fullName>
+                    <default>false</default>
+                    <label>Philippines</label>
+                </value>
+                <value>
+                    <fullName>Poland</fullName>
+                    <default>false</default>
+                    <label>Poland</label>
+                </value>
+                <value>
+                    <fullName>Portugal</fullName>
+                    <default>false</default>
+                    <label>Portugal</label>
+                </value>
+                <value>
+                    <fullName>Republic of Korea</fullName>
+                    <default>false</default>
+                    <label>Republic of Korea</label>
+                </value>
+                <value>
+                    <fullName>Reunion</fullName>
+                    <default>false</default>
+                    <label>Reunion</label>
+                </value>
+                <value>
+                    <fullName>Russian Federation</fullName>
+                    <default>false</default>
+                    <label>Russian Federation</label>
+                </value>
+                <value>
+                    <fullName>Saint Kitts and Nevis</fullName>
+                    <default>false</default>
+                    <label>Saint Kitts and Nevis</label>
+                </value>
+                <value>
+                    <fullName>Saint Lucia</fullName>
+                    <default>false</default>
+                    <label>Saint Lucia</label>
+                </value>
+                <value>
+                    <fullName>Saint Vincent and the Grenadines</fullName>
+                    <default>false</default>
+                    <label>Saint Vincent and the Grenadines</label>
+                </value>
+                <value>
+                    <fullName>Samoa</fullName>
+                    <default>false</default>
+                    <label>Samoa</label>
+                </value>
+                <value>
+                    <fullName>Saudi Arabia</fullName>
+                    <default>false</default>
+                    <label>Saudi Arabia</label>
+                </value>
+                <value>
+                    <fullName>Singapore</fullName>
+                    <default>false</default>
+                    <label>Singapore</label>
+                </value>
+                <value>
+                    <fullName>Sint Maarten (Dutch part)</fullName>
+                    <default>false</default>
+                    <label>Sint Maarten (Dutch part)</label>
+                </value>
+                <value>
+                    <fullName>Slovakia</fullName>
+                    <default>false</default>
+                    <label>Slovakia</label>
+                </value>
+                <value>
+                    <fullName>Solomon Islands</fullName>
+                    <default>false</default>
+                    <label>Solomon Islands</label>
+                </value>
+                <value>
+                    <fullName>Spain</fullName>
+                    <default>false</default>
+                    <label>Spain</label>
+                </value>
+                <value>
+                    <fullName>Sri Lanka</fullName>
+                    <default>false</default>
+                    <label>Sri Lanka</label>
+                </value>
+                <value>
+                    <fullName>Suriname</fullName>
+                    <default>false</default>
+                    <label>Suriname</label>
+                </value>
+                <value>
+                    <fullName>Swaziland</fullName>
+                    <default>false</default>
+                    <label>Swaziland</label>
+                </value>
+                <value>
+                    <fullName>Sweden</fullName>
+                    <default>false</default>
+                    <label>Sweden</label>
+                </value>
+                <value>
+                    <fullName>Switzerland</fullName>
+                    <default>false</default>
+                    <label>Switzerland</label>
+                </value>
+                <value>
+                    <fullName>Taiwan</fullName>
+                    <default>false</default>
+                    <label>Taiwan</label>
+                </value>
+                <value>
+                    <fullName>Tanzania, United Republic Of</fullName>
+                    <default>false</default>
+                    <label>Tanzania, United Republic Of</label>
+                </value>
+                <value>
+                    <fullName>Thailand</fullName>
+                    <default>false</default>
+                    <label>Thailand</label>
+                </value>
+                <value>
+                    <fullName>Timor-Leste</fullName>
+                    <default>false</default>
+                    <label>Timor-Leste</label>
+                </value>
+                <value>
+                    <fullName>Tonga</fullName>
+                    <default>false</default>
+                    <label>Tonga</label>
+                </value>
+                <value>
+                    <fullName>Trinidad and Tobago</fullName>
+                    <default>false</default>
+                    <label>Trinidad and Tobago</label>
+                </value>
+                <value>
+                    <fullName>Turks and Caicos Islands</fullName>
+                    <default>false</default>
+                    <label>Turks and Caicos Islands</label>
+                </value>
+                <value>
+                    <fullName>Tuvalu</fullName>
+                    <default>false</default>
+                    <label>Tuvalu</label>
+                </value>
+                <value>
+                    <fullName>United Arab Emirates</fullName>
+                    <default>false</default>
+                    <label>United Arab Emirates</label>
+                </value>
+                <value>
+                    <fullName>United Kingdom</fullName>
+                    <default>false</default>
+                    <label>United Kingdom</label>
+                </value>
+                <value>
+                    <fullName>United States</fullName>
+                    <default>false</default>
+                    <label>United States</label>
+                </value>
+                <value>
+                    <fullName>Uruguay</fullName>
+                    <default>false</default>
+                    <label>Uruguay</label>
+                </value>
+                <value>
+                    <fullName>Vanuatu</fullName>
+                    <default>false</default>
+                    <label>Vanuatu</label>
+                </value>
+                <value>
+                    <fullName>Venezuela</fullName>
+                    <default>false</default>
+                    <label>Venezuela</label>
+                </value>
+                <value>
+                    <fullName>Vietna</fullName>
+                    <default>false</default>
+                    <label>Vietna</label>
+                </value>
+                <value>
+                    <fullName>Virgin Islands (British)</fullName>
+                    <default>false</default>
+                    <label>Virgin Islands (British)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>CurrentGenerators__c</fullName>
         <externalId>false</externalId>
         <label>Current Generator(s)</label>
         <length>100</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Owner.Id= $User.Id, &apos;True&apos;, &apos;False&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Owner</label>
+        <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -218,8 +908,98 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Discount_Percentage__c</fullName>
+        <description>Displays the percentage that will be subtracted from the total amount of the opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the customer is getting a discount on this opportunity, enter the amount here. For example, if the discount is ten percent, enter the whole number 10.</inlineHelpText>
+        <label>Discount Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Discounted_Amount__c</fullName>
+        <description>Calculates the opportunity amount after any discount has been applied.</description>
+        <externalId>false</externalId>
+        <formula>Amount * ( 1 - Discount_Percentage__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Opportunity amount after discount has been applied.</inlineHelpText>
+        <label>Discounted Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dummy_Total_Revenue__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <externalId>false</externalId>
+        <label>Dummy Total Revenue</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>ExpectedRevenue</fullName>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Expected_Percentage_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Percentage 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Expected_Percentage</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Expected_Percentage_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Percentage 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Expected_Percentage</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Expected_Percentage_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Percentage 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Expected_Percentage</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <defaultValue>&apos;Agriculture&apos;</defaultValue>
+        <externalId>false</externalId>
+        <label>Industry</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Industry</valueSetName>
+        </valueSet>
     </fields>
     <fields>
         <fullName>IqScore</fullName>
@@ -245,6 +1025,57 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MileStones_Revenue1__c</fullName>
+        <externalId>false</externalId>
+        <formula>(  VALUE(TEXT(Expected_Percentage_1__c) ) /100 )* Amount</formula>
+        <label>MileStones Revenue 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>MileStones_Revenue2__c</fullName>
+        <externalId>false</externalId>
+        <formula>( VALUE(TEXT(Expected_Percentage_2__c) ) /100 )* Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MileStones Revenue 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>MileStones_Revenue3__c</fullName>
+        <externalId>false</externalId>
+        <formula>( VALUE(TEXT(Expected_Percentage_3__c) ) /100 )* Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MileStones Revenue 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Month_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount/FLOOR(IF( 
+
+(CloseDate - TODAY()) / 365 * 12 &lt; 1, 1, (CloseDate - TODAY()) / 365 * 12
+))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Month Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -275,6 +1106,33 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Payment_Date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Date 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Date 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Date_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Date 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Pricebook2Id</fullName>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -283,6 +1141,45 @@
         <fullName>Probability</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Project_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Revenue_Collected_Progess__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(&quot;/img/samples/color_green.gif&quot;, &quot;Green&quot;,  11, ((Total_Milestone_Revenue__c/Amount  ) * 100))
+&amp;IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;Yellow&quot;,11, (100 - (100 *
+(Total_Milestone_Revenue__c/Amount ) ))) &amp;
+&apos;&apos;
+&amp; TEXT(ROUND((Total_Milestone_Revenue__c/Amount )*100,0))
+&amp; &apos;%&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Revenue Collected Progess</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Revenue_Collected__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Payment_Date_3__c &lt;  TODAY()   ,  MileStones_Revenue3__c ,  IF(Payment_Date_2__c &lt;  TODAY(), MileStones_Revenue2__c ,  IF(Payment_Date_1__c &lt;  TODAY(), MileStones_Revenue1__c , 0) ) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Revenue Collected</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>StageName</fullName>
@@ -294,6 +1191,35 @@
         <fullName>TotalOpportunityQuantity</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Total_Milestone_Revenue__c</fullName>
+        <description>This field will be updated by Process Builder to calculate for Progress bar</description>
+        <externalId>false</externalId>
+        <label>Total Milestone Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Rev__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Today() &gt;= Payment_Date_3__c, MileStones_Revenue3__c+MileStones_Revenue2__c + MileStones_Revenue1__c,
+if(Today() &gt;= Payment_Date_2__c, MileStones_Revenue1__c + MileStones_Revenue2__c,
+if(Today() &gt;= Payment_Date_1__c, MileStones_Revenue1__c,
+MileStones_Revenue3__c+MileStones_Revenue2__c + MileStones_Revenue1__c
+)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Mile Stone Total Revenue</inlineHelpText>
+        <label>Mile Stone Total Revnue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>TrackingNumber__c</fullName>
@@ -425,6 +1351,20 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Project_ID</fullName>
+        <active>true</active>
+        <description>Project Code should be in the format - &quot;ABCDEF-ABCD-0000-000&quot;</description>
+        <errorConditionFormula>NOT( OR( ISBLANK(Project_Code__c), REGEX( Project_Code__c , &quot;[A-Z]{6}-[A-Z]{4}-[0-9]{4}-[0-9]{3}&quot;)))</errorConditionFormula>
+        <errorMessage>Project Code should be in the format - &quot;ABCDEF-ABCD-0000-000&quot;
+Please set Caps Lock on</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Total_Percentage_exceeds_100</fullName>
+        <active>false</active>
+        <errorConditionFormula>((Total_Milestone_Revenue__c/Amount ) * 100) &gt;60</errorConditionFormula>
+        <errorMessage>Total percentage Exceeds, Please check Percentage</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>DeliveryStatus</fullName>
         <availability>online</availability>

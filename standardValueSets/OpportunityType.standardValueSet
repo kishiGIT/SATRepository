@@ -21,4 +21,9 @@
         <default>false</default>
         <label>New Customer</label>
     </standardValue>
+    <standardValue>
+        <fullName>New Project</fullName>
+        <default>false</default>
+        <label>New Project</label>
+    </standardValue>
 </StandardValueSet>

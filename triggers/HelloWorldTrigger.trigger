@@ -1,5 +1,5 @@
-//testing test methods
-trigger HelloWorldTrigger on Book__c (before insert) {
-  Book__c[] books = Trigger.new;
-  MyHelloWorld.applyDiscount(books);
+trigger HelloWorldTrigger on Account (before insert) {
+    for(Account a : Trigger.New) {
+        a.Description = 'New description';
+    }   
 }

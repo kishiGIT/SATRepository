@@ -6,5 +6,7 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Speaker__c</tabs>
+    <tabs>BoatReview__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

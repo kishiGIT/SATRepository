@@ -2,8 +2,23 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>None</fullName>
+        <fullName>Entree</fullName>
         <default>false</default>
-        <label>None</label>
+        <label>Entree</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Side</fullName>
+        <default>false</default>
+        <label>Side</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dessert</fullName>
+        <default>false</default>
+        <label>Dessert</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Beverage</fullName>
+        <default>false</default>
+        <label>Beverage</label>
     </standardValue>
 </StandardValueSet>

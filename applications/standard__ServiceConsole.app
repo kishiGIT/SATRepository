@@ -179,7 +179,15 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
+    <tabs>Speaker__c</tabs>
+    <tabs>BoatReview__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>BoatReview__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Speaker__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

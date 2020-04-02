@@ -50,7 +50,7 @@
     </preferences>
     <preferences>
         <settingName>HstsSitesCommunities</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>LocalNames</settingName>
@@ -77,10 +77,6 @@
         <settingValue>false</settingValue>
     </preferences>
     <preferences>
-        <settingName>Packaging2</settingName>
-        <settingValue>true</settingValue>
-    </preferences>
-    <preferences>
         <settingName>PardotAppV1Enabled</settingName>
         <settingValue>false</settingValue>
     </preferences>
@@ -98,7 +94,7 @@
     </preferences>
     <preferences>
         <settingName>RedirectionWarning</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>ReferrerPolicy</settingName>
@@ -114,7 +110,7 @@
     </preferences>
     <preferences>
         <settingName>S1EncryptedStoragePref2</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>S1OfflinePref</settingName>
@@ -122,7 +118,7 @@
     </preferences>
     <preferences>
         <settingName>ScratchOrgManagementPref</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>SelfSetPasswordInApi</settingName>
@@ -138,7 +134,7 @@
     </preferences>
     <preferences>
         <settingName>Translation</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>UpgradeInsecureRequestsPref</settingName>

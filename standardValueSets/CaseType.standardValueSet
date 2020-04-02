@@ -26,4 +26,19 @@
         <default>false</default>
         <label>Other</label>
     </standardValue>
+    <standardValue>
+        <fullName>Routine Maintenance</fullName>
+        <default>false</default>
+        <label>Routine Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Repair</fullName>
+        <default>false</default>
+        <label>Repair</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+    </standardValue>
 </StandardValueSet>

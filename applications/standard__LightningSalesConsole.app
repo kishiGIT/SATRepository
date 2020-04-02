@@ -19,9 +19,17 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Speaker__c</tabs>
+    <tabs>BoatReview__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>BoatReview__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Speaker__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

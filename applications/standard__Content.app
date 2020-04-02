@@ -8,4 +8,6 @@
     <tabs>standard-Workspace</tabs>
     <tabs>standard-ContentSearch</tabs>
     <tabs>standard-ContentSubscriptions</tabs>
+    <tabs>Speaker__c</tabs>
+    <tabs>BoatReview__c</tabs>
 </CustomApplication>

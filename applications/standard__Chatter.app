@@ -9,4 +9,6 @@
     <tabs>standard-OtherUserProfile</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>Speaker__c</tabs>
+    <tabs>BoatReview__c</tabs>
 </CustomApplication>

@@ -1,17 +1,15 @@
 ({
-
     jsLoaded: function(component) {
         component.set("v.jsLoaded", true);
     },
-    
-    setLocation: function(component, event, helper) {
-		var params = event.getParam('arguments');
-        if (params) {
-            component.set("v.location", {
-                lat: params.lat,
-                long: params.long
-            });
-        }
-    }
-
+    onPlotMapMarker : function (component, event, helper) {
+        //Get lat and long from event params
+        var lat = event.getParam('lat');
+        var long = event.getParam('long');
+        //Set lat and long to the location sObject attribute
+        component.set('v.location', {
+            lat : lat,
+            long : long
+        });
+    },
 })

@@ -3,10 +3,9 @@
     <autoActivateNewReminders>true</autoActivateNewReminders>
     <customizableProductSchedulesEnabled>false</customizableProductSchedulesEnabled>
     <doesAutoAddSplitOwnerAsOpportunityTeamMember xsi:nil="true"/>
-    <doesEnforceStandardOpportunitySaveLogic>true</doesEnforceStandardOpportunitySaveLogic>
     <enableFindSimilarOpportunities>false</enableFindSimilarOpportunities>
     <enableOpportunityFieldHistoryTracking>false</enableOpportunityFieldHistoryTracking>
-    <enableOpportunityTeam>false</enableOpportunityTeam>
+    <enableOpportunityTeam>true</enableOpportunityTeam>
     <enableUpdateReminders>true</enableUpdateReminders>
     <promptToAddProducts>false</promptToAddProducts>
 </OpportunitySettings>

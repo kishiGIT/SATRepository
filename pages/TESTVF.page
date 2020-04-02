@@ -1,0 +1,9 @@
+<apex:page standardController="Account" Extensions="MydemoVFCtrl" docType="html-5.0">
+<apex:form >
+This is test page<br/>
+Input Text : <apex:inputText label="Account Name" />
+Input Field :                 <apex:inputField value="{!account.Industry}"/>
+<apex:commandButton action="{!saveBtn}" value="Save" id="theButton"/>
+
+</apex:form>
+</apex:page>

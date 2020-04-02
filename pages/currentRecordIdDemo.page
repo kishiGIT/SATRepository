@@ -1,0 +1,17 @@
+<apex:page standardController="Account" extensions="CurrentRecordIdDemoController">
+  <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection title="Current account record Id is : {!currentRecordId}" collapsible="false">
+            <apex:outputField value="{!acc.name}"/>
+            <apex:outputField value="{!acc.AccountNumber}"/>
+            <apex:outputField value="{!acc.Type}"/>
+            <apex:outputField value="{!acc.Industry}"/>
+        </apex:pageBlockSection>
+         
+        <apex:pageBlockSection title="Testing parameter" collapsible="false">
+            Name is <b>{!parameterValue}</b>
+        </apex:pageBlockSection>
+         
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

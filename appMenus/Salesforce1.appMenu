@@ -49,11 +49,11 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>LightningInstrumentation</name>
+        <name>Forecasting</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>LightningSchedulerSetupAssistant</name>
+        <name>LightningInstrumentation</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
 </AppMenu>

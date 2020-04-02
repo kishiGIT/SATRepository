@@ -1,0 +1,60 @@
+<aura:component controller="NewProjectCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader" access="global" >
+        <aura:attribute name="newOppName" type="String"/>
+        <aura:attribute name="newProjectCode" type="String"/>
+        <aura:attribute name="errorMsg" type ="String"/>
+        <aura:attribute name="loadSpinner" type ="Boolean" default="true"/>
+        <!--LDS-->
+        <aura:attribute name="Opportunityrecord" type="Object"
+                        description="The record object to be displayed"/>
+        <aura:attribute name="OpportunityFields" type="Object"
+                        description="A simplified view record object to be displayed"/>
+        <aura:attribute name="recordError" type="String"
+                        description="An error message bound to force:recordData"/>
+        <force:recordData aura:id="oppRecord"
+                          layoutType="FULL"
+                          recordId="{!v.recordId}" 
+                          targetError="{!v.recordError}"
+                          targetRecord="{!v.Opportunityrecord}"
+                          targetFields="{!v.OpportunityFields }"
+                          fields="Name,AccountId,Account.Name,Project_Code__c,CloseDate,StageName,Account.Industry,Industry__c"
+                          recordUpdated="{!c.recordUpdate}"
+                          mode="VIEW"/>
+        <aura:if isTrue="{!v.loadSpinner}">
+            <lightning:spinner alternativeText="Loading.." variant="brand" size="large" aura:id="mySpinner"/>
+    </aura:if>
+    <div>
+        <aura:if isTrue="{!not(empty(v.errorMsg))}"> 
+            <c:AlertMessage Message="{!v.errorMsg}" type="error"/>
+        </aura:if>
+        
+        <lightning:recordEditForm aura:id="inputMccForm" objectApiName="Opportunity" onsuccess="{!c.handleSuccess}" 
+                                  onload="{!c.handleLoad}" onsubmit="{!c.handleSubmit}" onerror="{!c.handleError}" recordId="{!v.recordId}">
+            <lightning:messages />
+            <div class="c-container">
+                <lightning:layout multipleRows="true">
+                    <lightning:layoutItem size="12" smallDeviceSize="6" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                        <lightning:inputField fieldName="AccountId" />
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" smallDeviceSize="6" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                        <lightning:inputField fieldName="Name"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" smallDeviceSize="6" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                        <lightning:inputField fieldName="Project_Code__c"  value="{!v.newProjectCode}" disabled="true"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" smallDeviceSize="6" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                        <lightning:inputField fieldName="StageName" />
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" smallDeviceSize="6" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                        <lightning:inputField aura:id="industry" fieldName="Industry__c" onchange="{!c.industryChange}" />
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="12" smallDeviceSize="6" mediumDeviceSize="6" largeDeviceSize="6" padding="around-small">
+                        <lightning:inputField fieldName="CloseDate" />
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+            <div class="slds-float_right">
+                <lightning:button  variant="brand" type="submit" label="Create Project"/> 
+            </div>  
+        </lightning:recordEditForm>       
+    </div>
+    </aura:component>
