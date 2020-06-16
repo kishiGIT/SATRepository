@@ -3,7 +3,8 @@ private class AccountManagerTest {
 
     private static testMethod void getAccountTest1() {
         Id recordId = createTestRecord();
-        // Set up a test request
+        // AR Test
+        // set up a test request
         RestRequest request = new RestRequest();
         request.requestUri = 'https://na1.salesforce.com/services/apexrest/Accounts/'+ recordId +'/contacts' ;
         request.httpMethod = 'GET';
