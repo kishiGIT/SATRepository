@@ -1495,9 +1495,11 @@
         <members>BoatReview__c-BoatReview Layout</members>
         <members>BoatType__c-Boat Type Layout</members>
         <members>Boat__c-Boat Layout</members>
+        <members>BuyerAccount-Buyer Account Layout</members>
         <members>Campaign-Campaign Layout</members>
         <members>CampaignMember-Campaign Member Page Layout</members>
         <members>Camping_Item__c-Camping Item Layout</members>
+        <members>CardPaymentMethod-Card Payment Method Layout</members>
         <members>Case-Case %28HowWeRoll%29 Layout</members>
         <members>Case-Case %28Marketing%29 Layout</members>
         <members>Case-Case %28Sales%29 Layout</members>
@@ -1512,13 +1514,16 @@
         <members>Contact-Contact %28Sales%29 Layout</members>
         <members>Contact-Contact %28Support%29 Layout</members>
         <members>Contact-Contact Layout</members>
+        <members>ContactPointAddress-Contact Point Address Layout</members>
         <members>ContactPointEmail-Contact Point Email Layout</members>
         <members>ContactPointPhone-Contact Point Phone Layout</members>
         <members>ContentVersion-Content Version Layout</members>
         <members>Contract-Contract Layout</members>
         <members>Customer_Satisfaction_Survey__c-Customer Satisfaction Survey Layout</members>
         <members>DandBCompany-D%26B Company Layout</members>
+        <members>DelegatedAccount-External Managed Account Layout</members>
         <members>Delivery__c-Delivery Layout</members>
+        <members>DigitalWallet-Digital Wallet Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EmailMessage-Email Message Layout</members>
         <members>Event-Event Layout</members>
@@ -1550,6 +1555,11 @@
         <members>OpportunityTeamMember-Opportunity Team Member Layout</members>
         <members>Order-Order Layout</members>
         <members>OrderItem-Order Product Layout</members>
+        <members>Payment-Payment Layout</members>
+        <members>PaymentAuthorization-Payment Authorization Layout</members>
+        <members>PaymentGateway-Payment Gateway Layout</members>
+        <members>PaymentGatewayLog-Payment Gateway Log Layout</members>
+        <members>PaymentGroup-Payment Group Layout</members>
         <members>Pricebook2-Price Book Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
         <members>Product2-Product %28HowWeRoll%29 Layout</members>
@@ -1557,6 +1567,8 @@
         <members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
         <members>Project__c-Project Layout</members>
         <members>QuickText-Quick Text Layout</members>
+        <members>Refund-Refund Layout</members>
+        <members>RefundLinePayment-Refund Line Payment Layout</members>
         <members>Scorecard-Scorecard Layout</members>
         <members>ScorecardAssociation-Scorecard Association Layout</members>
         <members>ScorecardMetric-Scorecard Metric Layout</members>
@@ -1676,6 +1688,11 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>cms_document</members>
+        <members>cms_image</members>
+        <name>ManagedContentType</name>
+    </types>
+    <types>
         <members>ProjectService</members>
         <name>NamedCredential</name>
     </types>
@@ -1711,6 +1728,7 @@
         <members>HighVolumePortal</members>
         <members>Identity User</members>
         <members>MarketingProfile</members>
+        <members>Minimum Access - Salesforce</members>
         <members>Partner App Subscription User</members>
         <members>Partner Community Login User</members>
         <members>Partner Community User</members>
@@ -1763,6 +1781,10 @@
         <members>animals_soap</members>
         <members>warehouse</members>
         <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>screen_flows_prebuilt_crt</members>
+        <name>ReportType</name>
     </types>
     <types>
         <members>CEO</members>
