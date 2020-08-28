@@ -1328,6 +1328,7 @@
         <members>PricebookEntry</members>
         <members>Product2</members>
         <members>ProductConsumptionSchedule</members>
+        <members>Production_Output__mdt</members>
         <members>Project__c</members>
         <members>PromptAction</members>
         <members>QuickText</members>
@@ -1565,6 +1566,7 @@
         <members>Product2-Product %28HowWeRoll%29 Layout</members>
         <members>Product2-Product Layout</members>
         <members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
+        <members>Production_Output__mdt-Production Output Layout</members>
         <members>Project__c-Project Layout</members>
         <members>QuickText-Quick Text Layout</members>
         <members>Refund-Refund Layout</members>
