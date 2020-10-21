@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>AccountSite</fullName>
+        <field>Site</field>
+        <formula>&quot;1234567&quot;</formula>
+        <name>AccountSite</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>Account_Type_To_Customer</fullName>
         <field>Type</field>
@@ -27,4 +35,18 @@
         <operation>Literal</operation>
         <protected>false</protected>
     </fieldUpdates>
+    <rules>
+        <fullName>Update AccountSite</fullName>
+        <actions>
+            <name>AccountSite</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.BillingCity</field>
+            <operation>equals</operation>
+            <value>San Francisco</value>
+        </criteriaItems>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
 </Workflow>

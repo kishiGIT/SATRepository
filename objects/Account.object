@@ -1136,6 +1136,14 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Account_Site</fullName>
+        <active>true</active>
+        <description>Account Site - Length should not be greater than 6 Characters</description>
+        <errorConditionFormula>Len(Site)&lt;&gt;6</errorConditionFormula>
+        <errorDisplayField>Site</errorDisplayField>
+        <errorMessage>Length should be 6 characters, Please contact Administrator</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>Billing</fullName>
         <availability>online</availability>

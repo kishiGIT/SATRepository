@@ -2012,6 +2012,7 @@
         <name>TopicsForObjects</name>
     </types>
     <types>
+        <members>Account.Account_Site</members>
         <members>Line_Item__c.Validate_Quantity</members>
         <members>Opportunity.Project_ID</members>
         <members>Opportunity.Total_Percentage_exceeds_100</members>
@@ -2028,6 +2029,7 @@
         <name>WebLink</name>
     </types>
     <types>
+        <members>Account.AccountSite</members>
         <members>Account.Account_Type_To_Customer</members>
         <members>Account.Account_Type_To_Prospect</members>
         <members>Account.Field_Update</members>
@@ -2035,6 +2037,7 @@
         <name>WorkflowFieldUpdate</name>
     </types>
     <types>
+        <members>Account.Update AccountSite</members>
         <members>BoatType__c.Hitha_WF</members>
         <members>Line_Item__c.Copy Unit Price</members>
         <name>WorkflowRule</name>
