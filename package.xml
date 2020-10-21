@@ -254,6 +254,7 @@
         <members>Account.CustomerPriority__c</members>
         <members>Account.Customer_ID__c</members>
         <members>Account.DandbCompanyId</members>
+        <members>Account.Date_Field__c</members>
         <members>Account.Description</members>
         <members>Account.DunsNumber</members>
         <members>Account.Fax</members>
@@ -264,7 +265,11 @@
         <members>Account.NaicsCode</members>
         <members>Account.NaicsDesc</members>
         <members>Account.Name</members>
+        <members>Account.Number1__c</members>
+        <members>Account.Number2__c</members>
+        <members>Account.Number3__c</members>
         <members>Account.NumberOfEmployees</members>
+        <members>Account.Number_Field__c</members>
         <members>Account.Number_of_Contacts__c</members>
         <members>Account.NumberofLocations__c</members>
         <members>Account.OwnerId</members>
@@ -279,6 +284,7 @@
         <members>Account.Sic</members>
         <members>Account.SicDesc</members>
         <members>Account.Site</members>
+        <members>Account.Text_Field__c</members>
         <members>Account.TickerSymbol</members>
         <members>Account.Time_Zone__c</members>
         <members>Account.Tradestyle</members>
@@ -1459,9 +1465,11 @@
         <members>Account_address_Update</members>
         <members>Closed_Won_Opportunities</members>
         <members>New_Lead</members>
+        <members>RecordtypeChanged</members>
         <members>Test</members>
         <members>Update_Milestone_Revenue</members>
         <members>Update_Opportunity</members>
+        <members>a</members>
         <name>Flow</name>
     </types>
     <types>
@@ -1774,6 +1782,8 @@
         <name>QuickAction</name>
     </types>
     <types>
+        <members>Account.New</members>
+        <members>Account.Old</members>
         <members>Idea.InternalIdeasIdeaRecordType</members>
         <name>RecordType</name>
     </types>
