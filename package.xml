@@ -1578,6 +1578,8 @@
         <members>Production_Output__mdt-Production Output Layout</members>
         <members>Project__c-Project Layout</members>
         <members>QuickText-Quick Text Layout</members>
+        <members>Quote-Quote Layout</members>
+        <members>QuoteLineItem-Quote Line Item Layout</members>
         <members>Refund-Refund Layout</members>
         <members>RefundLinePayment-Refund Line Payment Layout</members>
         <members>Scorecard-Scorecard Layout</members>
@@ -1770,6 +1772,7 @@
         <members>NewTask</members>
         <members>Opportunity.Change_Request</members>
         <members>Opportunity.New_Project</members>
+        <members>Quote.SendEmail</members>
         <members>SendEmail</members>
         <members>Task.Defer</members>
         <members>Task.Defer_0</members>
