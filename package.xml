@@ -1710,6 +1710,7 @@
         <name>NamedCredential</name>
     </types>
     <types>
+        <members>Case_Read_Only</members>
         <members>Conference_App_User</members>
         <members>HithaPS</members>
         <name>PermissionSet</name>
