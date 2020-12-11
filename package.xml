@@ -1572,6 +1572,7 @@
         <members>PaymentGroup-Payment Group Layout</members>
         <members>Pricebook2-Price Book Layout</members>
         <members>PricebookEntry-Price Book Entry Layout</members>
+        <members>ProcessException-Process Exception Layout</members>
         <members>Product2-Product %28HowWeRoll%29 Layout</members>
         <members>Product2-Product Layout</members>
         <members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
