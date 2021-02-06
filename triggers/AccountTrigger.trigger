@@ -8,6 +8,8 @@ trigger AccountTrigger on Account (before insert , before update , after insert,
     if(Trigger.isBefore && (Trigger.isInsert || Trigger.isUpdate) ){
         ah.updateAccountOperation(Trigger.new);
     }
+    system.debug('12345' + '12345');
+    
     if(Trigger.isAfter && (Trigger.isInsert || Trigger.isUpdate) ){
         ah.afterUpdateAccountOperation(Trigger.new,Trigger.oldMap,Trigger.isUpdate);
     }
