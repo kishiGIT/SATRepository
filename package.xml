@@ -120,6 +120,7 @@
         <members>AccountTrigger</members>
         <members>AddRelatedRecord</members>
         <members>BatchApexErrorTrigger</members>
+        <members>Eventexample</members>
         <members>ExampleTrigger</members>
         <members>HelloWorldTrigger</members>
         <members>LeadConvertValidation</members>
