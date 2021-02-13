@@ -1500,8 +1500,13 @@
         <members>Account-Account %28Support%29 Layout</members>
         <members>Account-Account Layout</members>
         <members>Account-Warehouse Schema Account Layout</members>
+        <members>Address-Address Layout</members>
         <members>Asset-Asset Layout</members>
+        <members>AssetAction-Asset Action Layout</members>
+        <members>AssetActionSource-Asset Action Source Layout</members>
         <members>AssetRelationship-Asset Relationship Layout</members>
+        <members>AssetStatePeriod-Asset State Period Layout</members>
+        <members>AssociatedLocation-Associated Location Layout</members>
         <members>BatchLeadConvertErrors__c-Batch Lead Convert Errors Layout</members>
         <members>BoatReview__c-BoatReview Layout</members>
         <members>BoatType__c-Boat Type Layout</members>
@@ -1540,6 +1545,8 @@
         <members>Event-Event Layout</members>
         <members>Expense__c-Expense Layout</members>
         <members>FeedItem-Feed Item Layout</members>
+        <members>FinanceBalanceSnapshot-Finance Balance Snapshot Layout</members>
+        <members>FinanceTransaction-Finance Transaction Layout</members>
         <members>Global-Global Layout</members>
         <members>Idea-Idea Layout</members>
         <members>Individual-Individual Layout</members>
@@ -1549,6 +1556,7 @@
         <members>Lead-Lead %28Sales%29 Layout</members>
         <members>Lead-Lead %28Support%29 Layout</members>
         <members>Lead-Lead Layout</members>
+        <members>LegalEntity-Legal Entity Layout</members>
         <members>Line_Item__c-Line Item Layout</members>
         <members>LiveAgentSession-Chat Session Layout</members>
         <members>LiveChatTranscript-Chat Transcript Layout</members>
@@ -1556,6 +1564,7 @@
         <members>LiveChatTranscriptEvent-Chat Transcript Event Layout</members>
         <members>LiveChatTranscriptWaiting-Chat Transcript %28Waiting%29 Layout</members>
         <members>LiveChatVisitor-Chat Visitor Layout</members>
+        <members>Location-Location Layout</members>
         <members>Macro-Macro Layout</members>
         <members>Merchandise__c-Merchandise Layout</members>
         <members>Opportunity-Opportunity %28Marketing%29 Layout</members>
