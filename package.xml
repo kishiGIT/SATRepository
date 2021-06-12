@@ -1535,6 +1535,8 @@
         <members>ContactPointPhone-Contact Point Phone Layout</members>
         <members>ContentVersion-Content Version Layout</members>
         <members>Contract-Contract Layout</members>
+        <members>CreditMemo-Credit Memo Layout</members>
+        <members>CreditMemoLine-Credit Memo Line Layout</members>
         <members>Customer_Satisfaction_Survey__c-Customer Satisfaction Survey Layout</members>
         <members>DandBCompany-D%26B Company Layout</members>
         <members>DelegatedAccount-External Managed Account Layout</members>
@@ -1551,6 +1553,8 @@
         <members>Idea-Idea Layout</members>
         <members>Individual-Individual Layout</members>
         <members>Inventory_Setting__mdt-Inventory Setting Layout</members>
+        <members>Invoice-Invoice Layout</members>
+        <members>InvoiceLine-Invoice Line Layout</members>
         <members>Invoice__c-Invoice Layout</members>
         <members>Lead-Lead %28Marketing%29 Layout</members>
         <members>Lead-Lead %28Sales%29 Layout</members>
@@ -1745,6 +1749,7 @@
         <members>Customer Community User</members>
         <members>Customer Portal Manager Custom</members>
         <members>Customer Portal Manager Standard</members>
+        <members>External Apps Login User</members>
         <members>External Identity User</members>
         <members>Force%2Ecom - App Subscription User</members>
         <members>Force%2Ecom - Free User</members>
@@ -1758,6 +1763,7 @@
         <members>Partner Community Login User</members>
         <members>Partner Community User</members>
         <members>PlatformPortal</members>
+        <members>Read Only</members>
         <members>ReadOnly</members>
         <members>Silver Partner User</members>
         <members>SolutionManager</members>

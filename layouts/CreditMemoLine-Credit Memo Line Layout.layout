@@ -69,6 +69,10 @@
                 <behavior>Edit</behavior>
                 <field>TaxAmount</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>LineAmount</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>
